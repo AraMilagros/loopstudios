@@ -1,0 +1,85 @@
+ #footer{
+    /* border: 2px solid chocolate; */
+    background: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    min-height: 15vh;
+}
+
+.footer__colum1 h5{
+    margin-bottom: 20px;
+}
+
+.footer__colum1 .nav__list{
+    padding-left: 0;
+}
+
+.footer__colum2{
+    /* border: 2px solid white; */
+    text-align: end;
+}
+
+.footer__colum2 .iconos{
+    margin-bottom: 20px;
+
+}
+
+.iconos--item{
+    width: 20px;
+}
+
+.iconos--item:hover{
+    cursor: pointer;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    padding-bottom: 5px;
+}
+/* esto permitira que no afete al ultimo hijo */
+.iconos--item:not(:last-child){
+    margin-right: 20px;
+}
+
+.footer__colum2 p{
+    color: hsl(0, 0%, 55%);
+}
+
+@media screen and ((max-width: 480px) or (max-width: 520px)){
+    #footer{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .footer__colum1 nav{
+        /* border: 2px solid white; */
+        margin: 20% auto;
+    }
+
+    .footer__colum1 h5{
+        margin-top: 40%;
+        font-size: 1.5em;
+    }
+
+    .footer__colum1 .nav__list{
+        display: contents;
+        flex-direction: column;
+    }   
+
+    .nav__list--item{
+        margin: 10%;
+    }
+
+    
+
+    .iconos{
+        /* border: 2px solid white; */
+        text-align: center;
+    }
+
+}

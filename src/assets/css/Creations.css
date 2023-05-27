@@ -1,0 +1,123 @@
+
+.content--h2{
+    font-family: 'Josefin Sans';
+    letter-spacing: .3ch;
+    grid-area: title;
+    margin-bottom: 30px;
+}
+
+.content--btn{
+    border: 1px solid black;
+    background: none;
+    padding: 5px 35px;
+    grid-area: button;
+    margin-bottom: 30px;
+}
+
+
+.creations-item{
+    grid-area: item;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+
+.content{
+    display: grid;
+    /* width: 100vw; */
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+                        
+                        "title title title button"
+                        "item item item item"
+                        "item item item item"
+    ;
+    justify-content: center;
+    /* margin: auto; */
+    overflow: hidden;
+}
+
+@media screen and ((max-width: 480px) or (max-width: 980px)){
+    .creations-item{
+        grid-template-columns: auto;
+    }
+
+    .content{
+        width: 90vw;
+        grid-template-areas:
+                            "title"
+                            "item"
+                            "item"
+                            "item"
+                            "item"
+                            "item"
+                            "item"
+                            "item"
+                            "item"
+                            "button"
+        ;
+
+        /* justify-content: center; */
+    }
+
+    .creations-item{
+        justify-content:space-between;
+    
+    }
+
+    .content--h2{
+        margin: auto;
+        margin-bottom: 10%;
+        font-size: 2em;
+        font-weight: 900;
+    }
+
+    .content--btn{
+        width: 300px;
+        margin: 1em auto;
+    
+        
+    }
+
+}
+
+@media screen and (min-width: 980px) {
+    .content{
+        /* border: 3px solid yellow; */
+        justify-content: space-around;
+        
+    }
+
+    .creations-item{
+        grid-template-columns: auto auto auto;
+    }
+
+    .content--btn:hover{
+        background: black;
+        color:white;
+    }
+
+    .creationsTitle--btn:hover{
+        background: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+    }
+    
+   
+}
+
+@media screen and (min-width: 1024px){
+
+    .content--h2{
+        margin-left: 5vw;
+    }
+
+    .content--btn{
+        margin-right: 5vw;
+    }
+    .creations-item{
+        grid-template-columns: auto auto auto auto;
+    }
+
+
+}

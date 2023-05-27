@@ -1,0 +1,130 @@
+.article {
+    position: relative;
+
+    min-height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    padding-left: 10%;
+    /* padding-right: 10%; */
+
+    /* border: 3px solid rgb(6, 234, 203); */
+}
+
+.article--img {
+    width: 780px;
+    min-height: 550px;
+    position: relative;
+}
+
+.article__info {
+    /* border: 2px solid rgb(211, 9, 9); */
+    font-size: 1.2em;
+    background: hsl(0, 0%, 100%);
+    width: 650px;
+    min-height: 350px;
+    padding: 70px;
+    padding-right: 5px;
+
+    color: hsl(0, 0%, 55%);
+    position: relative;
+    top: 130px;
+    right: 170px;
+}
+
+.article__info--title {
+    margin-bottom: 30px;
+
+    font-family: 'Josefin Sans';
+    letter-spacing: .2ch;
+    /* border: 2px solid green; */
+}
+
+.article__info--p {
+    color: hsl(0, 0%, 55%);
+    /* border: 2px solid salmon; */
+
+}
+
+@media screen and ((max-width: 480px) or (max-width: 980px)) {
+    .article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 3em;
+        margin-bottom: 4em;
+        font-size: 1.5em;
+    }
+
+    .article--img {
+        width: 90vw;
+        min-height: 30vh;
+        margin-bottom: 20%;
+    }
+
+    .article__info--title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: black
+    }
+
+    .article__info {
+        text-align: center;
+        
+        width: 90vw;
+        min-height: auto;
+        top: 0;
+        right: 0;
+        padding: 0;
+
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+
+    .article{
+        /* border: 2px solid green; */
+        min-height: 60vh;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        padding: 100px;
+        overflow: hidden;
+    }
+
+    .article--img{
+        width: 60vw;
+        min-height: 20vh;
+    }
+    
+    .article__info {
+        /* border: 2px solid rgb(211, 9, 9); */
+        background: hsl(0, 0%, 100%);
+    
+        color: hsl(0, 0%, 55%);
+        position: relative;
+        top: 15vh;
+        right: 15vw;
+        /* min-width: 45vw; */
+        min-width: 480px;
+        min-height: 10vh;
+    }
+
+    .article__info--title {
+        margin-bottom: 30px;
+
+        font-family: 'Josefin Sans';
+        letter-spacing: .2ch;
+        /* border: 2px solid green; */
+    }
+
+    .article__info--p {
+        color: hsl(0, 0%, 55%);
+        
+        /* border: 2px solid salmon; */
+
+    }
+
+}
