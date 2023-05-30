@@ -8,8 +8,6 @@ export default function Header() {
         <div className="header__bg">
           <p className="header__bg--p" >IMMERSIVE EXPERIENCES THAT DELIVER</p>
         </div>
-
-        
     </div>
   )
 }

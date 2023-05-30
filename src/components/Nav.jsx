@@ -25,14 +25,14 @@ export default function Nav() {
 
     <div className={scrolling ? 'topNav activeScroll' : 'topNav'} id="topNav-id">
 
-      <h2>loopstudios</h2>
+      <h1>loopstudios</h1>
 
       <div className='contentNav'>
         <button className='topNav--button' id="navButton" onClick={desplegarMenu}>
           <svg className="svg" width="24" height="16" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" /></g></svg>
         </button>
 
-        <nav className='nav'>
+       <nav className='nav'>
 
           <ul className='nav__list' id="nav__list-id">
             <li className='nav__list--item'>

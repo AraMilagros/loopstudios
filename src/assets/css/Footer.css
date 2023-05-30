@@ -11,6 +11,7 @@
     padding-right: 10%;
 
     min-height: 15vh;
+    margin-top: 10%;
 }
 
 .footer__colum1 h5{
@@ -49,7 +50,7 @@
     color: hsl(0, 0%, 55%);
 }
 
-@media screen and ((max-width: 480px) or (max-width: 520px)){
+@media screen and ((max-width: 480px) or (max-width: 992px)){
     #footer{
         flex-direction: column;
         text-align: center;
@@ -82,4 +83,11 @@
         text-align: center;
     }
 
+}
+
+@media  screen and (max-width: 1200px) {
+    #footer{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
