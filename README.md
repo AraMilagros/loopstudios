@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AraMilagros/loopstudios)
-- Live Site URL: [Add live site URL here](loppstudios.netlify.app)
+- Solution URL: [this repository](https://github.com/AraMilagros/loopstudios)
+- Live Site URL: [Live](https://loppstudios.netlify.app/)
 
 ## My process
 
